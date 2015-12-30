@@ -1,111 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>Diamond Hall</title>
-	<link rel="stylesheet" href="css/application.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<script src="javascript/jquery-1.11.3.min.js"></script>
-	<script src="javascript/main.js"></script>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Diamond Hall</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/application.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="javascript/jquery-2.1.4.min.js"></script>
+  <script src="javascript/main.js"></script>
 </head>
 <body>
 
 <!--HEADER-->
 <header>
-  <div class="container">
-    <a href="<?php echo $get_hd; ?>" class="logo pull-left">
-      <img src="<?php echo $pwd ?>img/logo.png" alt="">
-    </a>
+    <div class="container">
+        <a href="<?php echo $get_hd; ?>" class="logo pull-left">
+            <img src="<?php echo $pwd ?>img/logo.png" alt="">
+        </a>
 
-    <?php 
-        $contact_page_id = 81;
-        $tel_lviv = get_metadata('post', $contact_page_id, 'wpcf-tel-number-office-lviv', true);
-        $tel_chernivtsi = get_metadata('post', $contact_page_id, 'wpcf-tel-number-office-chernivtsi', true);
-    ?>
+        <?php 
+            $contact_page_id = 81;
+            $tel_lviv = get_metadata('post', $contact_page_id, 'wpcf-tel-number-office-lviv', true);
+            $tel_chernivtsi = get_metadata('post', $contact_page_id, 'wpcf-tel-number-office-chernivtsi', true);
+        ?>
 
-    <div class="contacts pull-left">
-      <p>
-        <span class="number">
-          <?php echo $tel_lviv; ?> (095) 231 11 00   
-        </span>
-        <br>
-        <span class="city"> м.Львів</span>
-      </p>
+        <div class="contacts pull-left">
+            <p>
+                <span class="number">
+                <?php echo $tel_lviv; ?> (095) 231 11 00   
+                </span>
+                <br>
+                <span class="city"> м.Львів</span>
+            </p>
+        </div>
+        <div id="nav-main-box" class="pull-right">
+            <?php // wp_nav_menu( array('menu' => 'menu' )); ?>
+            <div class="nav-menu-btn"><i></i></div>
+        </div>
     </div>
-    <div id="nav-main-box" class="pull-right">
-      <?php // wp_nav_menu( array('menu' => 'menu' )); ?>
-      <div class="nav-menu-btn"><i></i></div>
-    </div>
-  </div>
 </header>
 
+<!-- OUR TEAM -->
+<section class="our_team">
+    <div class="container">
+        <h2 class="section_title">
+            відділ продажу
+        </h2>
+        <div class="row">
+        </div>
+        <div class="contacons contacons-lviv">
+            <div class="line first clearfix">
+                <div class="contacon">
+                    <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                        <g>
+                            <clipPath id="hex-mask_worker">
+                                <polygon points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" />
+                            </clipPath>
+                        </g>
+                        <a xlink:href="javascript:void(0);">
+                            <polygon fill="#fff" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
+                            <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/ira_senuk.png" preserveAspectRatio="xMidYMin slice" />
+                            <p class="worker_pre">
+                                <span class="name">
+                                    Іра Сеник
+                                </span>
+                                <span class="position">
+                                    персональний консультант
+                                </span>
+                            </p>
+                            <p class="worker_post">
+                                <span class="mail">
+                                    ira@ms-bud.com.ua
+                                </span>
+                                <span class="number">
+                                    067 231 00 22
+                                </span>
+                                <span class="get_call">
+                                    замовити дзвінок
+                                </span>
+                            </p>
+                        </a>
+                    </svg>
+                    <div class="contacon_fake"></div>
+                </div>
+                <div class="contacon">
+                    <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                        <g>
+                            <clipPath id="hex-mask_worker">
+                                <polygon points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" />
+                            </clipPath>
+                        </g>
+                        <a xlink:href="javascript:void(0);">
+                            <polygon fill="#fff" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
+                            <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/galia_peskova.png" preserveAspectRatio="xMidYMin slice" />
+                            <p class="worker_pre">
+                                <span class="name">
+                                    Галя Пєскова
+                                </span>
+                                <span class="position">
+                                    персональний консультант
+                                </span>
+                            </p>
+                            <p class="worker_post">
+                                <span class="mail">
+                                    galya@ms-bud.com.ua
+                                </span>
+                                <span class="number">
+                                    095 231 12 31
+                                </span>
+                                <span class="get_call">
+                                    замовити дзвінок
+                                </span>
+                            </p>
+                        </a>
+                    </svg>
+                    <div class="contacon_fake"></div>
+                </div>
+                <div class="contacon">
+                    <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                        <g>
+                            <clipPath id="hex-mask_worker">
+                                <polygon points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" />
+                            </clipPath>
+                        </g>
+                        <a xlink:href="javascript:void(0);">
+                            <polygon fill="#fff" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
+                            <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/vasyl_savchuk.png" preserveAspectRatio="xMidYMin slice" />
+                            <p class="worker_pre">
+                                <span class="name">
+                                    Василь Савчук
+                                </span>
+                                <span class="position">
+                                    персональний консультант
+                                </span>
+                            </p>
+                            <p class="worker_post">
+                                <span class="mail">
+                                    savchuk@ms-bud.com.ua
+                                </span>
+                                <span class="number">
+                                    097 321 00 77
+                                </span>
+                                <span class="get_call">
+                                    замовити дзвінок
+                                </span>
+                            </p>
+                        </a>
+                    </svg>
+                    <div class="contacon_fake"></div>
+                </div>
+            </div>
+            <div class="line second clearfix">
+                <div class="contacon">
+                    <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                        <g>
+                            <clipPath id="hex-mask_worker">
+                                <polygon points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" />
+                            </clipPath>
+                        </g>
+                        <a xlink:href="javascript:void(0);">
+                            <polygon fill="#fff" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
+                            <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/nadia_lukashuk.png" preserveAspectRatio="xMidYMin slice" />
+                            <p class="worker_pre">
+                                <span class="name">
+                                    Надія Лукащук
+                                </span>
+                                <span class="position">
+                                    заступник керівника відділу продажу
+                                </span>
+                            </p>
+                            <p class="worker_post">
+                                <span class="mail">
+                                    hello@ms-bud.com.ua
+                                </span>
+                                <span class="number">
+                                    067 673 67 10
+                                </span>
+                                <span class="get_call">
+                                    замовити дзвінок
+                                </span>
+                            </p>
+                        </a>
+                    </svg>
+                    <div class="contacon_fake"></div>
+                </div>
+                <div class="contacon">
+                    <svg class="svg-graphic" width="245" height="250" viewBox="0 0 245 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                        <g>
+                            <clipPath id="hex-mask_worker">
+                                <polygon points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" />
+                            </clipPath>
+                        </g>
+                        <a xlink:href="javascript:void(0);">
+                            <polygon fill="#fff" points="123,0 0,67 0,183 123,250 245,183 245,67 123,0" transform="" />
+                            <image clip-path="url(#hex-mask_worker)" height="100%" width="100%" xlink:href="<?php echo $pwd ?>img/birma_zaharova.png" preserveAspectRatio="xMidYMin slice" />
+                            <p class="worker_pre">
+                                <span class="name">
+                                    Бірма Захарова
+                                </span>
+                                <span class="position">
+                                    керівник відділу <br> продажу
+                                </span>
+                            </p>
+                            <p class="worker_post">
+                                <span class="mail">
+                                    ms@ms-bud.com.ua
+                                </span>
+                                <span class="number">
+                                    (032) 26 01 333
+                                </span>
+                                <span class="get_call">
+                                    замовити дзвінок
+                                </span>
+                            </p>
+                        </a>
+                    </svg>
+                    <div class="contacon_fake"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fake"></div>
+</section>
+
+<section class="contacts">
+
+    <div id="map" class="map"></div>
+</section>
 
 <!--FOOTER-->
 <footer>
-  <div class="container">
-		<div class="row">
-      <div class="col-md-6">
-        <h2 class="footer_title">
-            Залишились запитання?
-        </h2>
-        <div class="footer_text">
-            Заповни форму і наш менеджер зв’яжеться з Вами <br>
-            протягом 15-ти хвилин і відповість на усі Ваші запитання
-        </div>
-        <!--  -->
-        <?php echo do_shortcode('[contact-form-7 id="57"]'); ?>
-        <input type="text" class="inp_style">
-        <input type="text" class="inp_style">
-        <input type="text" class="inp_style">
-        <!--  -->
-      </div>
-      <div class="col-md-4 col-md-offset-2">
-    		<div class="f_contacts">
-      		<h2 class="footer_title">
-						контакти	      			
-      		</h2>		
-      		<p><span>М. ЛЬВІВ </span><?php echo $address_lviv; ?></p>
-      		<p><span>м. Львів</span>вул. Волошина, 6 <br>(095) 231 11 00	</p>
-    		</div>
-    		<div class="f_socials">
-    			<h2 class="footer_title">
-    				ми в соцмережах
-    			</h2>
-  			<a href="<?php echo $vk ?>" target="_blank">
-  				<h3>
-  					<i class="fa fa-vk"></i> 
-  					ВКОНТАКТІ
-  				</h3>
-  			</a>
-        <a href="<?php echo $facebook ?>" target="_blank">
-        	<h3>
-        		<i class="fa fa-facebook"></i> 
-        		FACEBOOK
-        	</h3>
-        </a>
-        <a href="skype:<?php echo $skype ?>?chat" target="_blank">
-        	<h3>
-        		<i class="fa fa-skype"></i> 
-        		SKYPE
-        	</h3>
-        </a>
-    		</div>
-      </div>
-    </div> 
-  </div>
+    <div class="container">
+        <div class="row">
+              <div class="col-md-6">
+                <h2 class="footer_title">
+                    Залишились запитання?
+                </h2>
+                <div class="footer_text">
+                    Заповни форму і наш менеджер зв’яжеться з Вами <br>
+                    протягом 15-ти хвилин і відповість на усі Ваші запитання
+                </div>
+
+                <!-- form inputs -->
+                <?php echo do_shortcode('[contact-form-7 id="57"]'); ?>
+                <input type="text" class="inp_style" placeholder="Ваше ім’я *">
+                <input type="text" class="inp_style">
+                <input type="text" class="inp_style">
+                <input type="submit" class="btn_style" value="Відправити">
+                <!--  -->
+
+              </div>
+              <div class="col-md-4 col-md-offset-2">
+                <div class="f_contacts">
+                    <h2 class="footer_title">
+                    контакти              
+                    </h2>   
+                    <p><span>М. ЛЬВІВ </span><?php echo $address_lviv; ?></p>
+                    <p><span>м. Львів</span>вул. Волошина, 6 <br>(095) 231 11 00  </p>
+                </div>
+                <div class="f_socials">
+                    <h2 class="footer_title">
+                        ми в соцмережах
+                    </h2>
+                    <a href="<?php echo $vk ?>" target="_blank">
+                        <h3>
+                          <i class="fa fa-vk"></i> 
+                          ВКОНТАКТІ
+                        </h3>
+                    </a>
+                    <a href="<?php echo $facebook ?>" target="_blank">
+                        <h3>
+                            <i class="fa fa-facebook"></i> 
+                            facebook
+                        </h3>
+                    </a>
+                    <!-- skype change to youtube -->
+                    <a href="skype:<?php echo $skype ?>?chat" target="_blank">
+                        <h3>
+                            <i class="fa fa-youtube"></i> 
+                            youtube
+                        </h3>
+                    </a>
+                </div>
+          </div>
+        </div> 
+    </div>
 </footer>
 
 <section class="afterfooter">
-	<div class="container">
-		<div class="pull-left">
-			&copy; Девелоперська компанія "MS"
-		</div>
-  	<div class="pull-right">
-  		Сайт зроблено в
-  		<a href="javascript:;" class="happy">hap:py</a>
-  	</div>
-	</div>
+    <div class="container">
+        <div class="pull-left">
+            &copy; Девелоперська компанія "MS"
+        </div>
+        <div class="pull-right">
+            Сайт зроблено в
+            <a href="javascript:;" class="happy">hap:py</a>
+        </div>
+    </div>
 </section>
 
 </body>

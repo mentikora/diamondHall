@@ -1,0 +1,169 @@
+section.our_team{
+  background-color: #fff;
+  padding-top: 80px;
+}
+  section.our_team .line{
+    position: relative;
+
+    text-align: center;
+    letter-spacing: -0.3em;
+  }
+    section.our_team .line.first{
+    }
+    .line.first .contacon:nth-child(3):before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: -10px;
+      left: -43px;
+      width: 130px;
+      height: 61px;
+      z-index: 2;
+
+      background: url('images/worker_before.png');
+
+      background-size: cover;
+      -webkit-background-size: cover;
+    }
+    .line.second .contacon:first-child:before,
+    .contacon_before.contacon:before{
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -141px;
+      left: -43px;
+      width: 207px;
+      height: 283px;
+      z-index: 2;
+
+      background: url('images/worker_after.png');
+
+      background-size: cover;
+      -webkit-background-size: cover;
+    }
+    /* add class .contacon_pre_fake for fake contacon in 2nd line*/
+    .contacon.contacon_pre_fake:before{
+      display: none !important;
+    }
+    section.our_team .line.second{
+      margin-top: -71px;
+    }
+  /* contacons wrapper*/
+  .contacons{
+    position: relative;
+    z-index: 2;
+  }
+  /* contacon item */
+  .contacon{
+    width: 245px;
+    height: 250px;
+    display: inline-block;
+    position: relative;
+
+    letter-spacing: normal;
+  }
+    .contacon .contacon_fake{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+
+      background: url('images/contacon_fake.png') no-repeat 0 0;
+
+      -webkit-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+    }
+      .contacon:hover .contacon_fake{
+        display: block;
+      }
+    .contacon .worker_pre,
+    .contacon .worker_post{
+      position: absolute;
+      left: 0;
+      width: 100%;
+      z-index: 3;
+
+      text-align: center;
+
+      -webkit-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+    }
+    .contacon .worker_pre{
+      bottom: 40px;
+    }
+      .contacon span.name{
+        font-size: 16px;
+        line-height: 16px;
+        text-transform: inherit;
+        color: #fdc75f;
+        font-family: benderblack, sans-serif;
+      }
+      .contacon span.position{
+        display: block;
+        width: 80%;
+        margin: 4px auto 0;
+
+        font-size: 14px;
+        line-height: 16px;
+        color: #fff;
+        text-transform: uppercase;
+      }
+    .contacon .worker_post{
+      top: 95px;
+      opacity: 0;
+      visibility: hidden;
+
+      font-size: 16px;
+      line-height: 16px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+      .contacon .worker_post span {
+        display: inline-block;
+      }
+      .contacon .worker_post .mail{
+        margin-bottom: 12px;
+        font-size: 16px;
+        line-height: 16px;
+      }
+      .contacon .worker_post .number{
+        width: 100%;
+        margin-bottom: 19px;
+
+        font-size: 16px;
+        line-height: 16px;
+      }
+      .contacon .worker_post .get_call{
+        display: inline-block;
+        width: 170px;
+        height: 30px;
+        border: 1px solid #ee8c01;
+
+        text-transform: uppercase;
+        color: #ee8c01;
+        font-size: 14px;
+        line-height: 30px;
+        font-family: benderblack, sans-serif;
+        cursor: pointer;
+
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+      }
+        .contacon .worker_post .get_call:hover{
+          color: #fff;
+          background: #ee8c01;
+        }
+
+    .contacon:hover .worker_pre{
+      opacity: 0;
+      visibility: hidden;
+    }
+    .contacon:hover .worker_post{
+      opacity: 1;
+      visibility: visible;
+    }
