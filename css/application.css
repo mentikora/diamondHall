@@ -87,8 +87,18 @@ body{ background: url('images/body_bg.jpg') repeat;}
 /*about complex*/
 section.about_complex{
 	color: #fff;
+	padding-bottom: 220px;
 }
-
+	section.about_complex .col-xs-6 div{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	section.about_complex .complex_img{
+		padding-right: 30px;
+	}
+	section.about_complex .line{
+		margin-top: 70px;
+	}
 /* about company */
 section.about_company{
 	color: #fff;

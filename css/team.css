@@ -14,21 +14,6 @@ section.our_team{
   }
     section.our_team .line.first{
     }
-    .line.first .contacon:nth-child(3):before{
-      content: '';
-      display: block;
-      position: absolute;
-      top: -10px;
-      left: -43px;
-      width: 130px;
-      height: 61px;
-      z-index: 2;
-
-      background: url('images/worker_before.png');
-
-      background-size: cover;
-      -webkit-background-size: cover;
-    }
     .line.second .contacon:first-child:before,
     .contacon_before.contacon:before{
       content: '';
