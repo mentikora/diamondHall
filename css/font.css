@@ -1,0 +1,33 @@
+/* include fonts */
+@font-face {
+	font-family: bender;
+	src:url('fonts/Bender.otf');
+}
+@font-face {
+	font-family: benderblack;
+	src:url('fonts/Bender_Black.otf');
+}
+@font-face {
+	font-family: benderblackitalic;
+	src:url('fonts/Bender_Black_Italic.otf');
+}
+@font-face {
+	font-family: benderbold;
+	src:url('fonts/Bender_Bold.otf');
+}
+@font-face {
+	font-family: benderbolditalic;
+	src:url('fonts/Bender_Bold_Italic.otf');
+}
+@font-face {
+	font-family: benderitalic;
+	src:url('fonts/Bender_Italic.otf');
+}
+@font-face {
+	font-family: benderlight;
+	src:url('fonts/Bender_Light.otf');
+}
+@font-face {
+	font-family: benderlightitalic;
+	src:url('fonts/Bender_Light_Italic.otf');
+}
