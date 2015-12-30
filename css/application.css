@@ -25,11 +25,18 @@ body{ background: url('images/body_bg.jpg') repeat;}
 .clearfix { display: block; }
 
 
+.container-860{
+	width: 860px;
+	margin: 0 auto;
+}
+
 .section_title{
   color: #ee8c01;
   font-size: 48px;
   font-family: benderblack, sans-serif;
   text-transform: uppercase;
+
+  margin-top: 0;
 }
   .our_projects h1.section_title {
     max-width: 400px;
@@ -87,11 +94,17 @@ body{ background: url('images/body_bg.jpg') repeat;}
     color: #fff;
   }
 
+/* top */
+
 /*about complex*/
 section.about_complex{
 	color: #fff;
 	padding-bottom: 220px;
 }
+	section.about_complex .section_title,
+	section.about_complex .after_title{
+		text-align: center;
+	}
 	section.about_complex .col-xs-6 div{
 		display: table-cell;
 		vertical-align: middle;
@@ -106,12 +119,16 @@ section.about_complex{
 /* about company */
 section.about_company{
 	height: 480px;
+	padding-top: 37px;
 	
 	color: #72777a;
 	background: url('images/about_company_bg.jpg') no-repeat 50%;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
+	section.about_company .left_side{
+		margin-top: 90px;
+	}
 	section.about_company .line{
 		margin-bottom: -40px;
 	}
@@ -149,7 +166,6 @@ section.gallery{
 	section.gallery .gallery_button{
 		display: inline-block;
 		margin-top: 256px;
-		background: #ff9707;
 	}
 	section.gallery .boss_post{
 		position: relative;
@@ -197,6 +213,7 @@ section.gallery{
 /* excursion */
 section.excursion{
 	height: 480px;
+	padding-top: 155px;
 
 	background: url('images/excursion_bg.jpg') no-repeat 50%;
 	-webkit-background-size: cover;
@@ -211,6 +228,7 @@ section.planning{
 /* catalog */
 section.catalog{
 	height: 400px;
+	padding-top: 120px;
 
 	background: url('images/catalog_bg.jpg') no-repeat 50%;
 	-webkit-background-size: cover;
