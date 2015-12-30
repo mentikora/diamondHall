@@ -99,10 +99,33 @@ section.about_complex{
 	section.about_complex .line{
 		margin-top: 70px;
 	}
+
 /* about company */
 section.about_company{
-	color: #fff;
+	height: 480px;
+	
+	color: #72777a;
+	background: url('images/about_company_bg.jpg') no-repeat 50%;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
+	section.about_company .line{
+		margin-bottom: -40px;
+	}
+		section.about_company .line:nth-child(odd){
+			margin-left: 80px;
+		}
+		section.about_company .line div{
+			display: table-cell;
+			vertical-align: middle;
+		}
+	section.about_company .about_us_img{
+		padding-right: 20px;
+	}
+	section.about_company .line span{
+		display: block;
+		color: #6f584f;
+	}
 
 /* gallery */
 section.gallery{
@@ -167,6 +190,7 @@ section.gallery{
 			height: 212px;
 			background: url('images/gallery_diamond.png') no-repeat 50%;
 		}
+
 /* excursion */
 section.excursion{
 	height: 480px;
