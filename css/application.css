@@ -62,17 +62,19 @@ body{ background: url('images/body_bg.jpg') repeat;}
   transition: all .3s ease-in-out;
 }
 .btn_style{
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
+  display: inline-block;
+  height: 62px;
+  line-height: 62px;
   margin-top: 4px;
   border: none;
+  padding: 0 32px;
+
 
   font-family: benderblack, sans-serif;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  background: #ee8c01;
+  background: #ff9707;
   font-size: 18px;
 
   -webkit-transition: all .3s ease-in-out;
@@ -81,7 +83,8 @@ body{ background: url('images/body_bg.jpg') repeat;}
 }
   .btn_style:hover{
     background: #f9b341;
-    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
   }
 
 /*about complex*/
