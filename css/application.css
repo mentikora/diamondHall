@@ -1,5 +1,4 @@
 @import "font.css";
-@import "backgrounds.css";
 @import "team.css";
 @import "header.css";
 @import "footer.css";
@@ -9,6 +8,7 @@ html, body{
 	height: 100%;
 	font-family: bender, sans-serif;
 }
+body{ background: url('images/body_bg.jpg') repeat;}
 
 
 /* clearfix */
@@ -24,6 +24,22 @@ html, body{
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
 
+
+.section_title{
+  color: #ee8c01;
+  font-size: 48px;
+  font-family: benderblack, sans-serif;
+  text-transform: uppercase;
+}
+  .our_projects h1.section_title {
+    max-width: 400px;
+  }
+  h1.section_title{
+    font-size: 72px;
+    line-height: 76px;
+    margin-top: 50px;
+    margin-bottom: 65px;
+  }
 
 /* form controls */
 .inp_style{
@@ -68,5 +84,127 @@ html, body{
     font-size: 20px;
   }
 
+/*about complex*/
+section.about_complex{
+	color: #fff;
+}
 
+/* about company */
+section.about_company{
+	color: #fff;
+}
+
+/* gallery */
+section.gallery{
+	padding-top: 130px;
+	padding-bottom: 170px;
+}
+	section.gallery .gallery_block{
+		width: 947px;
+		height: 495px;
+		margin: -75px auto 50px;
+
+		background: url('images/gallery_img.png') no-repeat 50%;
+		-webkit-background-size: cover;
+		background-size: cover;
+
+		text-align: center;
+	}
+	section.gallery .gallery_button{
+		display: inline-block;
+		margin-top: 256px;
+		background: #ff9707;
+	}
+	section.gallery .boss_post{
+		position: relative;
+		width: 544px;
+		height: 181px;
+		/*margin-left: 266px;*/
+		padding: 45px 80px 0 75px;
+		
+		text-align: center;
+		color: #fff;
+		background: url('images/boss_bg.png') no-repeat 50%;
+		font-family: benderbold, sans-serif;
+	}
+		section.gallery .boss_post p{
+			font-size: 24px;
+			color: #d8dbdd;
+			
+		}
+		section.gallery .boss_post span{
+			display: block;
+			text-align: right;
+
+			font-size: 14px;
+			color: #6f584f;
+		}
+		section.gallery .boss_post:before{
+			content: '';
+			position: absolute;
+			top: -35px;
+			left: -35px;
+			width: 133px;
+			height: 89px;
+			background: url('images/gallery_quote.png') no-repeat 50%;
+		}
+		section.gallery .boss_post:after{
+			content: '';
+			position: absolute;
+			top: 73px;
+			right: -112px;
+			width: 188px;
+			height: 212px;
+			background: url('images/gallery_diamond.png') no-repeat 50%;
+		}
+/* excursion */
+section.excursion{
+	height: 480px;
+
+	background: url('images/excursion_bg.jpg') no-repeat 50%;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+/* planning */
+section.planning{
+
+}
+
+/* catalog */
+section.catalog{
+	height: 400px;
+
+	background: url('images/catalog_bg.jpg') no-repeat 50%;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+/* video */
+section.video{
+	padding-top: 95px;
+}
+	section.video .video_block{
+		width: 677px;
+		height: 360px;
+		margin: 0 auto;
+		
+		color: #fff;
+		text-align: center;
+		background: url('images/video_img.png') no-repeat 0 0;
+	}
+	section.video .watch_video_btn{
+		display: block;
+		width: 104px;
+		height: 104px;
+		background-color: #fff;
+		margin: 118px auto 25px;
+	}
+
+/* map */
+#map{
+  height: 575px;
+  width: 100%;
+  background: #fff;
+}
 

@@ -1,7 +1,11 @@
 section.our_team{
-  background-color: #fff;
   padding-top: 80px;
+  padding-bottom: 105px;
 }
+  section.our_team .section_title{
+    text-align: center;
+    margin-bottom: 40px;
+  }
   section.our_team .line{
     position: relative;
 
