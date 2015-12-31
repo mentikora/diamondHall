@@ -278,8 +278,103 @@ section.excursion{
 
 /* planning */
 section.planning{
+	padding-top: 125px;
+	padding-bottom: 75px;
 
+	background: url('images/planning_bg.jpg') no-repeat 50% 0;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
+	section.planning .planning_house{
+		position: relative;
+		margin-bottom: 105px;
+	}
+		section.planning .planning_house .planning_house_before{
+			position: absolute;
+			top: -56px;
+			left: -35px;
+			width: 578px;
+			height: 187px;
+			padding-left: 67px;
+			padding-top: 30px;
+
+			background: url('images/planing_house_before.png') no-repeat 0 0;
+		}
+			section.planning .planning_house .planning_house_before h2{
+				margin-bottom: 0;
+			}
+			section.planning .planning_house .planning_house_before p{
+				font-size: 18px;
+				color: #9b9997;
+			}
+	/*img style*/
+	section.planning img{
+		display: block;
+	}
+		section.planning img.planning_arrow{
+			margin-top: 220px;
+			margin-left: 32px;
+		}
+		section.planning img.planning_house{
+			border-bottom: 3px solid #ee8c09;
+		}
+		section.planning img.planning_flat{
+			margin: 0 auto;
+		}
+	/*list style*/
+	section.planning ul{
+		list-style: none;
+		text-align: center;
+	}
+		section.planning li,
+		section.planning a{
+			color: #9b9997;
+		}
+		section.planning a{
+			
+			font-family: benderbold, sans-serif;
+
+			-webkit-transition: all .3s ease-in-out;
+			-o-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
+		}
+			section.planning a:hover{
+				text-decoration: none;
+			}
+
+		/*list house*/
+		section.planning .house_floor_list{
+			margin-top: 150px;
+			margin-right: 40px;
+		}
+			section.planning .house_floor_list li{
+				line-height: 30px;
+			}
+			section.planning .house_floor_list a{
+				font-size: 36px;
+			}
+
+		/*list flat*/
+		section.planning .flat_floor_list{
+			margin: 30px 0 60px 0;
+			padding: 0;
+		}
+			section.planning .flat_floor_list li{
+				display: inline-block;
+				margin-right: 15px;
+
+				line-height: 37px;
+				font-size: 30px;
+			}
+			section.planning .flat_floor_list a{
+				display: block;
+				width: 37px;
+				height: 37px;
+			}
+				section.planning .flat_floor_list a:hover{
+					color: #272e40;
+					background: url('images/flat_link_bg.png') no-repeat 0 0;
+				}
 
 /* catalog */
 section.catalog{
