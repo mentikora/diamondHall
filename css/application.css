@@ -70,7 +70,7 @@ body{ background: url('images/body_bg.jpg') repeat; }
   display: inline-block;
   height: 62px;
   line-height: 62px;
-  margin-top: 4px;
+  /*margin-top: 4px;*/
   border: none;
   padding: 0 32px;
 
@@ -227,7 +227,7 @@ section.gallery{
 		position: relative;
 		width: 544px;
 		height: 181px;
-		/*margin-left: 266px;*/
+		margin: 0 auto;
 		padding: 45px 80px 0 75px;
 		
 		text-align: center;
@@ -413,11 +413,37 @@ section.video{
 		text-transform: uppercase;
 	}
 
-/* map */
+/* map&contacts */
+section.contacts{
+	position: relative;
+}
+	section.contacts .map_title,
+	section.contacts .btn_map{
+		position: absolute;
+		z-index: 3;
+	}
+	section.contacts .map_title{
+		top: 0;
+		left: 0;
+		height: 182px;
+		width: 100%;
+		padding-top: 40px;
+
+		/*background: url('images/map_title_bg.png') no-repeat 50%;*/
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	section.contacts .btn_map{
+		bottom: 50px;
+		left: 50%;
+		margin-left: -115px;
+	}
 #map{
-  height: 575px;
+  height: 586px;
   width: 100%;
-  background: #fff;
+  position: relative;
+  z-index: 2;
+  /*background: #fff;*/
 }
 
 /* team */
