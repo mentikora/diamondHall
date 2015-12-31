@@ -4,9 +4,9 @@
 /* def's*/
 html, body{
 	height: 100%;
-	font-family: bender, sans-serif;
+	font-family: bender, sans-serif !important;
 }
-body{ background: url('images/body_bg.jpg') repeat;}
+body{ background: url('images/body_bg.jpg') repeat; }
 
 
 /* clearfix */
@@ -308,8 +308,14 @@ section.video{
 		display: block;
 		width: 104px;
 		height: 104px;
-		background-color: #fff;
 		margin: 118px auto 25px;
+
+		background: url('images/video_btn.png') no-repeat 0 0;
+	}
+	section.video span {
+		font-family: benderblack, sans-serif;
+		font-size: 18px;
+		text-transform: uppercase;
 	}
 
 /* map */
@@ -509,17 +515,22 @@ footer{
   }
   .f_contacts p{
     line-height: 24px;
-    color: #fff;
+    color: #fefefe;
     font-size: 16px;
+    text-transform: uppercase;
 
     margin-bottom: 15px;
   }
   .f_contacts span{
     display: block;
 
-    color: #ee8c01;
+    color: #a9abb0;
     font-size: 18px;
     font-family: benderblack, sans-serif;
+  }
+  .f_contacts i{
+  	font-style: normal;
+  	color: #ee8c01;
   }
   /*footer socials*/
   .f_socials{}
@@ -542,6 +553,7 @@ footer{
     }
       .f_socials a:hover{
         color: #fff;
+        text-decoration: none;
       }
     .f_socials i{
       display: inline-block;

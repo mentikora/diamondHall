@@ -478,7 +478,7 @@
 </section>
 
 <section class="contacts">
-
+    .map_title
     <div id="map" class="map"></div>
 </section>
 
@@ -498,8 +498,8 @@
                 <!-- form inputs -->
                 <?php echo do_shortcode('[contact-form-7 id="57"]'); ?>
                 <input type="text" class="inp_style" placeholder="Ваше ім’я *">
-                <input type="text" class="inp_style">
-                <input type="text" class="inp_style">
+                <input type="text" class="inp_style" placeholder="Телефон *">
+                <input type="text" class="inp_style" placeholder="E-mail">
                 <input type="submit" class="btn_style" value="Відправити">
                 <!--  -->
 
@@ -509,8 +509,12 @@
                     <h2 class="footer_title">
                     контакти              
                     </h2>   
-                    <p><span>М. ЛЬВІВ </span><?php echo $address_lviv; ?></p>
-                    <p><span>м. Львів</span>вул. Волошина, 6 <br>(095) 231 11 00  </p>
+                    <!-- <p><span>М. ЛЬВІВ </span><?php echo $address_lviv; ?></p> -->
+                    <p>
+                        <span>м. Львів</span>
+                        вул. Волошина, 6 <br>
+                        <i>(095) 231 11 00  </i>
+                    </p>
                 </div>
                 <div class="f_socials">
                     <h2 class="footer_title">
