@@ -1,5 +1,4 @@
 @import "font.css";
-@import "header.css";
 
 /* def's*/
 html, body{
@@ -70,7 +69,6 @@ body{ background: url('images/body_bg.jpg') repeat; }
   display: inline-block;
   height: 62px;
   line-height: 62px;
-  /*margin-top: 4px;*/
   border: none;
   padding: 0 32px;
 
@@ -91,6 +89,74 @@ body{ background: url('images/body_bg.jpg') repeat; }
     text-decoration: none;
     color: #fff;
   }
+
+/* header */
+header{
+  height: 165px;
+  background: url(images/header.png) no-repeat 50%;
+}
+  header .logo{
+    margin-top: 35px;
+    display: block;
+  }
+  header .contacts{
+    margin-top: 57px;
+    margin-left: 35px;
+    padding-left: 30px;
+    height: 50px;
+
+    border-left: 1px solid #c6c6c6;
+    font-size: 16px;
+    font-family: benderblack, sans-serif;
+    
+  }
+    header .contacts p{
+      line-height: 25px;
+    }
+    header .contacts span{
+      display: inline-block;
+    }
+    header .contacts .number{
+      color: #d8dbdd;
+      font-size: 20px;
+    }
+    header .contacts .city{
+      color: #93715d;
+    }
+  .nav-menu-btn {
+    margin-top: 48px;
+    margin-right: -23px;
+    cursor: pointer;
+  }
+    .nav-menu-btn i {
+      display: block;
+      width: 16px;
+      margin: 4px 0;
+    }
+    .nav-menu-btn:before {
+      content: '';
+      width: 23px;
+    }
+    .nav-menu-btn:after {
+      content: '';
+      width: 20px;
+    }
+    .nav-menu-btn i,
+    .nav-menu-btn:before,
+    .nav-menu-btn:after {
+      display: block;
+      height: 4px;
+      background-color: #b5b4b2;
+
+      -webkit-transition: .3s ease-in-out;
+      -o-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+    .nav-menu-btn:hover i,
+    .nav-menu-btn:hover:before,
+    .nav-menu-btn:hover:after {
+      background: #eb8000;
+    }
 
 /* top */
 section.top{
@@ -217,8 +283,25 @@ section.about_company{
 	-webkit-background-size: cover;
 	background-size: cover;
 }
+	section.about_company .section_title{
+		color: #6f584f;
+		margin-bottom: 40px;
+	}
+
 	section.about_company .left_side{
-		margin-top: 90px;
+		margin-top: 70px;
+	}
+	section.about_company .text{
+		font-size: 16px;
+		color: #72777a;
+		line-height: 24px;
+
+		margin-bottom: 30px;
+	}
+	
+	section.about_company .right_side{
+		padding-left: 0;
+		padding-right: 0;
 	}
 	section.about_company .line{
 		margin-bottom: -40px;
@@ -233,9 +316,15 @@ section.about_company{
 	section.about_company .about_us_img{
 		padding-right: 20px;
 	}
+	
 	section.about_company .line span{
 		display: block;
 		color: #6f584f;
+	}
+	section.about_company .line span,
+	section.about_company .line i {
+		font-style: normal;
+		font-family: benderblack, sans-serif;
 	}
 
 /* gallery */
