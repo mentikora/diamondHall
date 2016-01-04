@@ -27,6 +27,7 @@ body{ background: url('images/body_bg.jpg') repeat; }
 	margin: 0 auto;
 }
 
+/* main title style */
 .section_title{
   color: #fe9504;
   font-size: 48px;
@@ -35,15 +36,40 @@ body{ background: url('images/body_bg.jpg') repeat; }
 
   margin-top: 0;
 }
-  .our_projects h1.section_title {
-    max-width: 400px;
-  }
+	section.about_company .section_title,
+	section.catalog .section_title,
+	section.excursion .section_title{
+		color: #6f584f;
+	}
+	section.about_company .section_title{
+		margin-bottom: 40px;
+	}
+	section.catalog .section_title,
+	section.excursion .section_title{
+		margin-bottom: 20px;
+	}
   h1.section_title{
     font-size: 72px;
     line-height: 76px;
     margin-top: 50px;
     margin-bottom: 65px;
   }
+/* section p style*/
+section.about_company .text,
+section.catalog .text,
+section.excursion .text{
+	font-size: 16px;
+	color: #72777a;
+	line-height: 24px;
+}
+	section.about_company .text{
+		margin-bottom: 30px;	
+	}
+	section.catalog .text,
+	section.excursion .text{
+		margin-bottom: 40px;
+	}
+
 
 /* form controls */
 .inp_style{
@@ -70,8 +96,7 @@ body{ background: url('images/body_bg.jpg') repeat; }
   height: 62px;
   line-height: 62px;
   border: none;
-  padding: 0 32px;
-
+  width: 365px;
 
   font-family: benderblack, sans-serif;
   text-align: center;
@@ -283,22 +308,10 @@ section.about_company{
 	-webkit-background-size: cover;
 	background-size: cover;
 }
-	section.about_company .section_title{
-		color: #6f584f;
-		margin-bottom: 40px;
-	}
 
 	section.about_company .left_side{
 		margin-top: 70px;
 	}
-	section.about_company .text{
-		font-size: 16px;
-		color: #72777a;
-		line-height: 24px;
-
-		margin-bottom: 30px;
-	}
-	
 	section.about_company .right_side{
 		padding-left: 0;
 		padding-right: 0;
