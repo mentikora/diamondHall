@@ -152,6 +152,7 @@ header{
     margin-top: 48px;
     margin-right: -23px;
     cursor: pointer;
+    float: right;
   }
     .nav-menu-btn i {
       display: block;
