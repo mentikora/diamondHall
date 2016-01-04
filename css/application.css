@@ -29,7 +29,7 @@ body{ background: url('images/body_bg.jpg') repeat; }
 }
 
 .section_title{
-  color: #ee8c01;
+  color: #fe9504;
   font-size: 48px;
   font-family: benderblack, sans-serif;
   text-transform: uppercase;
@@ -121,6 +121,29 @@ section.top{
 
 		background-color: #6f584f;
 	}
+		section.top .counter span{
+			display: inline-block;
+			float: left;
+			font-family: benderbold, sans-serif;
+		}
+		section.top .counter .flats{
+			font-size: 40px;
+			color: #fe9504;
+
+			padding: 0 7px;
+		}
+		section.top .counter .text{
+			font-size: 13px;
+			line-height: 17px;
+			color: #f9f2f2;
+			text-transform: uppercase;
+
+			margin-top: 12px;
+		}
+			section.top .counter .text span {
+				font-size: 17px;
+				
+			}
 
 	section.top .top_house{
 		display: block;
@@ -149,18 +172,25 @@ section.top{
 			font-size: 60px;
 			line-height: 60px;
 			font-family: benderbold, sans-serif;
+			color: #d8dbdd;
 		}
 
 
 /*about complex*/
 section.about_complex{
-	color: #fff;
+	color: #9b9997;
+
+	padding-top: 95px;
 	padding-bottom: 220px;
 }
 	section.about_complex .section_title,
 	section.about_complex .after_title{
 		text-align: center;
 	}
+		section.about_complex .after_title{
+			font-size: 18px;
+			color: #c2a18d;
+		}
 	section.about_complex .col-xs-6 div{
 		display: table-cell;
 		vertical-align: middle;
@@ -170,6 +200,11 @@ section.about_complex{
 	}
 	section.about_complex .line{
 		margin-top: 70px;
+	}
+	section.about_complex .title{
+		font-size: 24px;
+		color: #c2a18d;
+		font-family: benderbold, sans-serif;
 	}
 
 /* about company */
@@ -415,6 +450,7 @@ section.video{
 
 /* map&contacts */
 section.contacts{
+	overflow: hidden;
 	position: relative;
 }
 	section.contacts .map_title,
@@ -443,7 +479,6 @@ section.contacts{
   width: 100%;
   position: relative;
   z-index: 2;
-  /*background: #fff;*/
 }
 
 /* team */
