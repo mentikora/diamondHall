@@ -355,6 +355,9 @@ section.gallery{
 		height: 495px;
 		margin: -75px auto 50px;
 
+		position: relative;
+		
+
 		background: url('images/gallery_img.png') no-repeat 50%;
 		-webkit-background-size: cover;
 		background-size: cover;
@@ -750,7 +753,7 @@ section.our_team{
 
 /* footer */
 footer{
-  height: 620px;
+  min-height: 620px;
   padding: 75px 0 65px 0;
 
   color: #ffffff;

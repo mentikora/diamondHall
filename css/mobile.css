@@ -93,5 +93,25 @@
 		background: #282c38;
 	}
 	
-
+	/* gallery */
+	section.gallery .gallery_block{
+		left: 50%;
+		margin: -75px 0 50px -478px;
+	}
+	section.gallery .boss_post{
+		background: none;
+	}
+	
+	/* planning */
+	section.planning{
+		background: none;
+	}
+	section.planning .planning_flat .section_title{
+		text-align: center !important;
+		padding: 0;
+	}
+	section.planning .flat_floor_list{
+		margin: 30px auto 60px;
+		float: none !important;
+	}
 }
