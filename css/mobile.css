@@ -1,0 +1,97 @@
+@media(max-width: 991px){
+
+	.container-860{
+		width: 100%;
+	}
+	.section_title{
+		font-family: benderbold, sans-serif;
+		padding-left: 60px;
+		text-align: left !important;
+	}
+	.container-fluid {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	/* header */
+	header{
+		background: none;
+		padding: 0 32px;
+	}
+		header .nav-menu-btn{
+			margin-right: 4px;
+			margin-top: 60px;
+		}
+		.nav-menu-btn i {
+		  display: block;
+		  width: 29px;
+		  margin: 7px 0;
+		}
+		.nav-menu-btn:before {
+		  content: '';
+		  width: 41px;
+		}
+		.nav-menu-btn:after {
+		  content: '';
+		  width: 36px;
+		}
+		.nav-menu-btn i,
+		.nav-menu-btn:before,
+		.nav-menu-btn:after {
+			height: 7px;
+		}
+	section.top .logo_count{
+		left: 50%;
+		margin-left: -264px;
+	}
+	section.top .trees_bg .street_position{
+		border: none;
+	}
+		section.top .trees_bg .street_position span{
+			font-size: 36px;
+			color: #93715d;
+		}
+	
+	/* about complex*/
+	section.about_complex{
+		padding-bottom: 0;
+	}
+	section.about_complex .line{
+		display: table;
+		width: 100%;
+	}
+		section.about_complex .block_50{
+			display: table-cell;
+			vertical-align: middle;
+			float: none;
+			margin-top: 0;
+			height: 360px;
+			text-align: center;
+		}
+			section.about_complex .block_50 .mobile_text{
+				font-size: 26px;
+				color: #93715d;
+				line-height: 30px;
+			}
+
+	section.about_complex .economy{
+		background: #2a313d;
+	}
+	section.about_complex .energy{
+		background: #323340;
+	}
+	section.about_complex .video{
+		background: #2a2d37;
+	}
+	section.about_complex .water{
+		background: #33303a;
+	}
+	section.about_complex .planning{
+		background: #323038;
+	}
+	section.about_complex .price{
+		background: #282c38;
+	}
+	
+
+}

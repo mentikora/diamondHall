@@ -1,11 +1,15 @@
 @import "font.css";
+/*@import "mobile.css";*/
 
 /* def's*/
 html, body{
 	height: 100%;
 	font-family: bender, sans-serif !important;
 }
-body{ background: url('images/body_bg.jpg') repeat; }
+body{ 
+	background: url('images/body_bg.jpg') repeat; 
+	overflow-x: hidden;
+}
 
 
 /* clearfix */
@@ -290,7 +294,7 @@ section.about_complex{
 	section.about_complex .complex_img{
 		padding-right: 30px;
 	}
-	section.about_complex .line{
+	section.about_complex .block_50{
 		margin-top: 70px;
 	}
 	section.about_complex .title{
