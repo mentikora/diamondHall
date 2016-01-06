@@ -8,9 +8,10 @@
 		padding-left: 60px;
 		text-align: left !important;
 	}
-	.container-fluid {
+	.container.about_container {
 		padding-left: 0 !important;
 		padding-right: 0 !important;
+		width: 100%;
 	}
 
 	/* header */
