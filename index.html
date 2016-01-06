@@ -6,6 +6,7 @@
   <title>Diamond Hall</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/application.css">
+  <link rel="stylesheet" href="css/mobile.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="javascript/jquery-2.1.4.min.js"></script>
   <script src="javascript/main.js"></script>
@@ -25,7 +26,7 @@
             $tel_chernivtsi = get_metadata('post', $contact_page_id, 'wpcf-tel-number-office-chernivtsi', true);
         ?>
 
-        <div class="contacts pull-left">
+        <div class="contacts pull-left hidden-xs hidden-sm">
             <p>
                 <span class="number">
                 <?php echo $tel_lviv; ?> (095) 231 11 00   
@@ -62,7 +63,9 @@
         <div class="container-860">
             <div class="street_position">
                 житло бізнес–класу <br>
-                вул. Пасічна, 90а
+                <span>
+                    вул. Пасічна, 90а
+                </span>
             </div>
         </div>
     </div>
@@ -73,7 +76,7 @@
 
 <!-- ABOUT COMPLEX -->
 <section class="about_complex">
-    <div class="container">
+    <div class="container-fluid">
         <h2 class="section_title">
             про комплекс
         </h2>
@@ -82,99 +85,144 @@
         </p>
         <!-- line -->
         <div class="clearfix line">
-            <div class="col-xs-6">
-                <div class="complex_img">
-                    <img src="img/test_img.png" alt="">
+            <div class="col-xs-6 block_50 economy">
+                <div class="visible-lg visible-md">
+                    <div class="complex_img">
+                        <img src="img/test_img.png" alt="">
+                    </div>
+                    <div class="complex_text">
+                        <p class="title">
+                            Квартири–конструктори
+                        </p>
+                        <p class="text">
+                            Ми використовуємо якісні матеріали 
+                            задля забезпечення надійності 
+                            будинку на багато років вперед.
+                        </p>
+                    </div>
                 </div>
-                <div class="complex_text">
-                    <p class="title">
-                        Квартири–конструктори
-                    </p>
-                    <p class="text">
-                        Ми використовуємо якісні матеріали 
-                        задля забезпечення надійності 
-                        будинку на багато років вперед.
-                    </p>
-                </div>
-            </div>
-            <div class="col-xs-6">
-                <div class="complex_img">
-                    <img src="img/test_img.png" alt="">
-                </div>
-                <div class="complex_text">
-                    <p class="title">
-                        Квартири–конструктори
-                    </p>
-                    <p class="text">
-                        Ми використовуємо якісні матеріали 
-                        задля забезпечення надійності 
-                        будинку на багато років вперед.
+                <div class="visible-xs visible-sm">
+                    <p class="mobile_text">
+                        Економія впродовж життя <br>
+                        на комунальні послуги
                     </p>
                 </div>
             </div>
-        </div>
-        <!-- line -->
-        <div class="clearfix line">
-            <div class="col-xs-6">
-                <div class="complex_img">
-                    <img src="img/test_img.png" alt="">
+            <div class="col-xs-6 block_50 energy">
+                <div class="visible-lg visible-md">
+                    <div class="complex_img">
+                        <img src="img/test_img.png" alt="">
+                    </div>
+                    <div class="complex_text">
+                        <p class="title">
+                            Квартири–конструктори
+                        </p>
+                        <p class="text">
+                            Ми використовуємо якісні матеріали 
+                            задля забезпечення надійності 
+                            будинку на багато років вперед.
+                        </p>
+                    </div>
                 </div>
-                <div class="complex_text">
-                    <p class="title">
-                        Квартири–конструктори
-                    </p>
-                    <p class="text">
-                        Ми використовуємо якісні матеріали 
-                        задля забезпечення надійності 
-                        будинку на багато років вперед.
-                    </p>
-                </div>
-            </div>
-            <div class="col-xs-6">
-                <div class="complex_img">
-                    <img src="img/test_img.png" alt="">
-                </div>
-                <div class="complex_text">
-                    <p class="title">
-                        Квартири–конструктори
-                    </p>
-                    <p class="text">
-                        Ми використовуємо якісні матеріали 
-                        задля забезпечення надійності 
-                        будинку на багато років вперед.
+                <div class="visible-xs visible-sm">
+                    <p class="mobile_text">
+                        Безперебійне <br>
+                        електропостачання
                     </p>
                 </div>
             </div>
         </div>
-        <!-- line -->
         <div class="clearfix line">
-            <div class="col-xs-6">
-                <div class="complex_img">
-                    <img src="img/test_img.png" alt="">
+            <div class="col-xs-6 block_50 video">
+                <div class="visible-lg visible-md">
+                    <div class="complex_img">
+                        <img src="img/test_img.png" alt="">
+                    </div>
+                    <div class="complex_text">
+                        <p class="title">
+                            Квартири–конструктори
+                        </p>
+                        <p class="text">
+                            Ми використовуємо якісні матеріали 
+                            задля забезпечення надійності 
+                            будинку на багато років вперед.
+                        </p>
+                    </div>
                 </div>
-                <div class="complex_text">
-                    <p class="title">
-                        Квартири–конструктори
-                    </p>
-                    <p class="text">
-                        Ми використовуємо якісні матеріали 
-                        задля забезпечення надійності 
-                        будинку на багато років вперед.
+                <div class="visible-sm visible-xs">
+                    <p class="mobile_text">
+                        Відеоспостереження <br>
+                        території
                     </p>
                 </div>
             </div>
-            <div class="col-xs-6">
-                <div class="complex_img">
-                    <img src="img/test_img.png" alt="">
+            <div class="col-xs-6 block_50 water">
+                <div class="visible-lg visible-md">
+                    <div class="complex_img">
+                        <img src="img/test_img.png" alt="">
+                    </div>
+                    <div class="complex_text">
+                        <p class="title">
+                            Квартири–конструктори
+                        </p>
+                        <p class="text">
+                            Ми використовуємо якісні матеріали 
+                            задля забезпечення надійності 
+                            будинку на багато років вперед.
+                        </p>
+                    </div>
                 </div>
-                <div class="complex_text">
-                    <p class="title">
-                        Квартири–конструктори
+                <div class="visible-xs visible-sm">
+                    <p class="mobile_text">
+                        Чиста вода <br>
+                        у Вашому помешканні
                     </p>
-                    <p class="text">
-                        Ми використовуємо якісні матеріали 
-                        задля забезпечення надійності 
-                        будинку на багато років вперед.
+                </div>
+            </div>
+        </div>
+        <div class="clearfix line">
+            <div class="col-xs-6 block_50 planning">
+                <div class="visible-lg visible-md">
+                    <div class="complex_img">
+                        <img src="img/test_img.png" alt="">
+                    </div>
+                    <div class="complex_text">
+                        <p class="title">
+                            Квартири–конструктори
+                        </p>
+                        <p class="text">
+                            Ми використовуємо якісні матеріали 
+                            задля забезпечення надійності 
+                            будинку на багато років вперед.
+                        </p>
+                    </div>
+                </div>
+                <div class="visible-xs visible-sm">
+                    <p class="mobile_text">
+                        Сучасне комфортабельне <br>
+                        планування
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-6 block_50 price">
+                <div class="visible-lg visible-md">
+                    <div class="complex_img">
+                        <img src="img/test_img.png" alt="">
+                    </div>
+                    <div class="complex_text">
+                        <p class="title">
+                            Квартири–конструктори
+                        </p>
+                        <p class="text">
+                            Ми використовуємо якісні матеріали 
+                            задля забезпечення надійності 
+                            будинку на багато років вперед.
+                        </p>
+                    </div>
+                </div>
+                <div class="visible-xs visible-sm">
+                    <p class="mobile_text">
+                        Доступна ціна
                     </p>
                 </div>
             </div>
@@ -196,7 +244,7 @@
                 ПЕРЕЙТИ НА САЙТ КОМПАНІЇ MS
             </a>
         </div>
-        <div class="col-md-6 right_side">
+        <div class="col-md-6 right_side visible-lg visible-md">
             <div class="line">
                 <div class="about_us_img">
                     <img src="img/about_us_img.png" alt="">
@@ -268,7 +316,7 @@
 <!-- PLANNING -->
 <section class="planning">
     <div class="container-860">
-        <div class="planning_house clearfix">
+        <div class="planning_house clearfix visible-lg visible-md">
             <div class="planning_house_before">
                 <h2 class="section_title">
                     Оберіть поверх
@@ -291,7 +339,7 @@
             <img src="img/planning_arrow.png" alt="planning_arrow" class="planning_arrow">
         </div>
         <div class="planning_flat">
-            <h2 class="section_title">ПЛАН 2-го поверху</h2>
+            <h2 class="section_title">ПЛАН <span>2</span>-го поверху</h2>
             <ul class="flat_floor_list pull-left">
                 <li><i class="fa fa-chevron-left"></i></li>
                 <li><a href="">1</a></li>
@@ -306,6 +354,10 @@
                 <li><a href="">10</a></li>
                 <li><i class="fa fa-chevron-right"></i></li>
             </ul>
+            <div class="visible-xs visible-sm text-center">
+                Оберіть квартиру, для детального <br> 
+                перегляду планування
+            </div>
             <img src="img/planning_flat.png" alt="planning_flat" class="planning_flat">
         </div>
     </div>          
@@ -334,7 +386,7 @@
 </section>
 
 <!-- OUR TEAM -->
-<section class="our_team">
+<section class="our_team visible-lg visible-md">
     <div class="container">
         <h2 class="section_title">
             відділ продажу
@@ -523,7 +575,7 @@
             Розташування
         </h2>
     </div>
-    <a href="javascript:;" class="btn_style btn_map">
+    <a href="javascript:;" class="btn_style btn_map visible-lg visible-md">
         ЗБІЛЬШИТИ КАРТУ
         <i class="fa fa-expand"></i>  
     </a>

@@ -1,11 +1,15 @@
 @import "font.css";
+/*@import "mobile.css";*/
 
 /* def's*/
 html, body{
 	height: 100%;
 	font-family: bender, sans-serif !important;
 }
-body{ background: url('images/body_bg.jpg') repeat; }
+body{ 
+	background: url('images/body_bg.jpg') repeat; 
+	overflow-x: hidden;
+}
 
 
 /* clearfix */
@@ -300,7 +304,7 @@ section.about_complex{
 	section.about_complex .complex_img{
 		padding-right: 30px;
 	}
-	section.about_complex .line{
+	section.about_complex .block_50{
 		margin-top: 70px;
 	}
 	section.about_complex .title{
@@ -360,6 +364,9 @@ section.gallery{
 		width: 947px;
 		height: 495px;
 		margin: -75px auto 50px;
+
+		position: relative;
+		
 
 		background: url('images/gallery_img.png') no-repeat 50%;
 		-webkit-background-size: cover;
@@ -756,7 +763,7 @@ section.our_team{
 
 /* footer */
 footer{
-  height: 620px;
+  min-height: 620px;
   padding: 75px 0 65px 0;
 
   color: #ffffff;
