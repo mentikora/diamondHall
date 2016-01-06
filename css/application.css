@@ -336,6 +336,21 @@ section.top{
 
 		background: #6f584f;
 	}
+		section.top .webcam span{
+			font-size: 12px;
+			line-height: 12px;
+			font-family: benderbold, sans-serif;
+			color: #d1d2d3;
+
+			display: block;
+			margin-top: 10px;
+			margin-left: 10px;
+		}
+		section.top .webcam img{
+			display: block;
+			margin-top: 15px;
+			margin-right: 10px;
+		}
 
 
 /*about complex*/
