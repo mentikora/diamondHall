@@ -266,6 +266,16 @@ section.top{
 			font-family: benderbold, sans-serif;
 			color: #d8dbdd;
 		}
+	section.top .webcam{
+		position: absolute;
+		top: 380px;
+		right: 0;
+		z-index: 3;
+		width: 158px;
+		height: 56px;
+
+		background: #6f584f;
+	}
 
 
 /*about complex*/
