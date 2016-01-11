@@ -123,4 +123,53 @@
 		margin: 30px auto 60px;
 		float: none !important;
 	}
+	
+	/* contacts */
+	section.contacts #map{
+		height: 855px;
+		background: #fff;
+	}
+
+	/* footer */
+	footer{
+		min-height: auto;
+		padding: 55px 0 65px;
+	}
+	footer .location{
+		margin-bottom: 92px;
+	}
+		footer .location img{
+			margin-bottom: 25px;
+		}
+	footer .m_telephone{
+		height: 75px;
+		line-height: 75px;
+		display: inline-block;
+
+		margin-bottom: 50px;
+		padding-left: 115px;
+		background: url('images/m_footer_telephone.png') no-repeat 0 50%;
+	}
+	footer .get_call{
+		margin: 58px 5% 95px;
+		width: 90%;
+	}
+	footer .m_socials{
+		border-top: 2px solid #2c363f;
+		padding: 65px 0 0;
+	}
+		footer .m_socials a{
+			display: inline-block;
+			width: 75px;
+			height: 75px;
+			line-height: 75px;
+
+			font-size: 40px;
+			border-radius: 50%;
+			color: #151d24;
+			background-color: #888c8f;
+		}
+		footer .m_socials a:hover{
+			color: #151d24;
+		}
 }
