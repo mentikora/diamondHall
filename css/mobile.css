@@ -5,13 +5,27 @@
 	}
 	.section_title{
 		font-family: benderbold, sans-serif;
-		padding-left: 60px;
 		text-align: left !important;
 	}
 	.container.about_container {
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 		width: 100%;
+	}
+	.btn_style{
+		width: 100%;
+		height: 82px;
+
+		line-height: 82px;
+		font-size: 31px;
+		font-family: benderbold, sans-serif;
+	}
+	/* all sections button width, padding, etc*/
+	section.about_company .container-860,
+	section.excursion .container-860,
+	section.catalog .container-860,
+	footer .container-860{
+		padding: 0 75px;
 	}
 
 	/* header */
@@ -72,7 +86,9 @@
 			float: none;
 			margin-top: 0;
 			height: 360px;
+			
 			text-align: center;
+			word-break: break-all;
 		}
 			section.about_complex .block_50 .mobile_text{
 				font-size: 26px;
@@ -100,6 +116,11 @@
 	}
 	section.about_complex .price{
 		background: #282c38;
+	}
+
+	/* about company*/
+	section.about_company .left_side{
+		padding: 0;
 	}
 	
 	/* gallery */
@@ -134,9 +155,14 @@
 	footer{
 		min-height: auto;
 		padding: 55px 0 65px;
+
+		-webkit-background-size: cover;
+		background-size: cover;
 	}
 	footer .location{
 		margin-bottom: 92px;
+
+		font-size: 30px;
 	}
 		footer .location img{
 			margin-bottom: 25px;
@@ -145,14 +171,16 @@
 		height: 75px;
 		line-height: 75px;
 		display: inline-block;
-
 		margin-bottom: 50px;
 		padding-left: 115px;
+
+		font-family: benderbold, sans-serif;
+		font-size: 53px;
+		color: #fff;
 		background: url('images/m_footer_telephone.png') no-repeat 0 50%;
 	}
 	footer .get_call{
-		margin: 58px 5% 95px;
-		width: 90%;
+		margin: 58px 0 95px;
 	}
 	footer .m_socials{
 		border-top: 2px solid #2c363f;
