@@ -244,6 +244,35 @@ header{
       /*color: #b5b4b2;*/
     }
 
+/* test menu */
+#fixed-menu ul{
+	width: 585px;
+	padding: 0;
+	margin: 150px auto 0;
+}
+#fixed-menu li{
+	margin-bottom: 60px;
+}
+#fixed-menu ul a{
+	display: inline-block;
+	height: 38px;
+	line-height: 38px;
+	padding-left: 102px;
+
+	text-transform: uppercase;
+	font-family: benderbold, sans-serif;
+	font-size: 36px;
+	color: #696566;
+
+	-webkit-transition: color .3s ease-in-out;
+	-o-transition: color .3s ease-in-out;
+	transition: color .3s ease-in-out;
+}
+	#fixed-menu ul a:hover{
+		text-decoration: none;
+		color: #ff9707;
+	}
+
 /* top */
 section.top{
 	color: #fff;

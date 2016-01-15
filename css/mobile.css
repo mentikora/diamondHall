@@ -84,16 +84,22 @@
 	/* top */
 	section.top .logo_count{
 		width: 645px;
-		left: 50%;
-		margin-left: -264px;
+		left: inherit;
+		right: 0;
+
 		background: url('images/mobile_top_logo.png') no-repeat 0 0;
 	}
 	section.top .trees_bg .street_position{
 		border: none;
+		font-family: benderbold, sans-serif;
+		font-size: 85px;
+
+		padding-left: 75px;
 	}
 		section.top .trees_bg .street_position span{
 			font-size: 36px;
 			color: #93715d;
+			font-family: bender, sans-serif;
 		}
 	
 	/* about complex*/
@@ -155,6 +161,9 @@
 		padding: 0;
 		margin: 0;
 	}
+	section.about_company .text{
+		margin-bottom: 100px;
+	}
 	
 	/* gallery */
 	section.gallery .gallery_block{
@@ -170,6 +179,11 @@
 		background: none;
 		border: 4px solid #93715d;
 	}
+
+	/* excursion */
+	section.excursion .text{
+		margin-bottom: 150px;
+	}
 	
 	/* planning */
 	section.planning{
@@ -183,7 +197,26 @@
 		margin: 30px auto 60px;
 		float: none !important;
 	}
+
+	section.planning .flat_floor_list a{
+		text-indent: -9999px;
+		border-bottom: 4px solid #50535a;
+
+		width: 30px;
+	}
+		section.planning .flat_floor_list li{
+			margin-right: 12px;
+		}
+		section.planning .flat_floor_list a:hover{
+			background: none;
+			border-color: #ff9707;
+		}
 	
+	/* catalog */
+	section.catalog .text{
+		margin-bottom: 190px;
+	}
+
 	/* contacts */
 	section.contacts #map{
 		height: 855px;
