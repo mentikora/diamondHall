@@ -80,9 +80,13 @@
 		.nav-menu-btn:after {
 			height: 7px;
 		}
+
+	/* top */
 	section.top .logo_count{
+		width: 645px;
 		left: 50%;
 		margin-left: -264px;
+		background: url('images/mobile_top_logo.png') no-repeat 0 0;
 	}
 	section.top .trees_bg .street_position{
 		border: none;
