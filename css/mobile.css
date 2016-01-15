@@ -20,12 +20,37 @@
 		font-size: 31px;
 		font-family: benderbold, sans-serif;
 	}
-	/* all sections button width, padding, etc*/
+
+	/* sections button width, padding, etc*/
 	section.about_company .container-860,
 	section.excursion .container-860,
 	section.catalog .container-860,
 	footer .container-860{
 		padding: 0 75px;
+	}
+
+	/* sections text */
+	section.about_company .text, 
+	section.catalog .text, 
+	section.excursion .text{
+		font-size: 26px;
+		color: #5b5b5c;
+		line-height: 32px;
+	}
+
+	/* sections padding*/
+	section.about_company, 
+	section.catalog, 
+	section.excursion{
+		padding: 100px 0 60px;
+		height: auto;
+	}
+
+	/* sections title*/
+	section.about_company .section_title, 
+	section.catalog .section_title, 
+	section.excursion .section_title{
+		font-family: benderblack, sans-serif;
 	}
 
 	/* header */
@@ -71,9 +96,12 @@
 	section.about_complex{
 		padding-bottom: 0;
 	}
+	section.about_complex .section_title{
+		padding: 0 75px;
+	}
 	section.about_complex .after_title{
 		text-align: left;
-		padding-left: 60px;
+		padding-left: 75px;
 		margin-bottom: 30px;
 	}
 	section.about_complex .line{
@@ -86,7 +114,7 @@
 			float: none;
 			margin-top: 0;
 			height: 360px;
-			
+
 			text-align: center;
 			word-break: break-all;
 		}
@@ -121,15 +149,22 @@
 	/* about company*/
 	section.about_company .left_side{
 		padding: 0;
+		margin: 0;
 	}
 	
 	/* gallery */
 	section.gallery .gallery_block{
-		left: 50%;
-		margin: -75px 0 50px -478px;
+		padding: 0 75px;
+		margin-left: 0;
+		margin-right: 0;
+		width: auto;
 	}
+		section.gallery .section_title{
+			padding: 0 75px;
+		}
 	section.gallery .boss_post{
 		background: none;
+		border: 4px solid #93715d;
 	}
 	
 	/* planning */
@@ -150,6 +185,9 @@
 		height: 855px;
 		background: #fff;
 	}
+		section.contacts .section_title{
+			padding: 0 75px;
+		}
 
 	/* footer */
 	footer{
